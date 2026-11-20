@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Engineering Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+      }
+    }
+    </script>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">PORTFOLIO.</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="layout">
+
+        <div class="content">
+
+            <section id="home">
+                <p>ENGINEERING PORTFOLIO</p>
+                <h1>Designing.<br>Building.<br>Innovating.</h1>
+                <p>
+                    Welcome to my engineering portfolio.
+                    Explore my experience, skills and projects.
+                </p>
+            </section>
+
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Add your biography here.</p>
+            </section>
+
+            <section id="experience">
+                <h2>Experience</h2>
+                <p>Add your professional experience here.</p>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <p>Add your engineering projects here.</p>
+            </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Add your contact details here.</p>
+            </section>
+
+        </div>
+
+        <div class="model-container">
+            <canvas id="model-canvas"></canvas>
+            <div class="model-label">
+                INTERACTIVE 3D MODEL
+            </div>
+        </div>
+
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+
+</body>
+</html>
