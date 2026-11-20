@@ -1,0 +1,153 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #101318;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: rgba(16, 19, 24, 0.95);
+    backdrop-filter: blur(12px);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    border-bottom: 1px solid #292e36;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #00d4ff;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    padding: 75px 5% 0;
+}
+
+.content {
+    padding-right: 50px;
+}
+
+section {
+    min-height: 100vh;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    scroll-margin-top: 75px;
+}
+
+section h1 {
+    font-size: clamp(42px, 5vw, 75px);
+    line-height: 1.1;
+    margin: 25px 0;
+}
+
+section h2 {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+section p {
+    color: #aab0ba;
+    line-height: 1.8;
+    max-width: 500px;
+}
+
+/* Sticky 3D model viewer */
+
+.model-container {
+    position: sticky;
+    top: 75px;
+    height: calc(100vh - 75px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#model-canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.model-label {
+    position: absolute;
+    bottom: 30px;
+    color: #00d4ff;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+/* Mobile layout */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 0 15px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .layout {
+        display: flex;
+        flex-direction: column;
+        padding: 75px 15px 0;
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .model-container {
+        position: relative;
+        top: auto;
+        height: 55vh;
+        order: -1;
+    }
+
+    section {
+        min-height: 75vh;
+    }
+}
