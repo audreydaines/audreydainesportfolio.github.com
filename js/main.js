@@ -26,7 +26,10 @@ import { OrbitControls } from
 // audreydaines.github.io/audreydainesportfolio.github.com/models/BiliSpectHat%20(1).gltf
 // audreydaines.github.io/audreydainesportfolio.github.com/models/BiliSpectHat%20(1).stl
 
-const MODEL_PATH = 'audreydaines.github.io/audreydainesportfolio.github.com/models/BiliSpectHat%20(1).glb';
+const MODEL_PATH = new URL(
+    '../models/BiliSpectHat%20(1).glb',
+    import.meta.url
+).href;
 
 // Total rotations across the page.
 // 1 = 360 degrees
