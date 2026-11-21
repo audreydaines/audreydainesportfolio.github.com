@@ -478,10 +478,12 @@ function showError(error) {
 
     errorElement.hidden = false;
 
-    console.error(error);
+    errorElement.textContent =
+        error.message || String(error);
+
+    console.error('3D Model Error:', error);
 
 }
-
 
 /* =========================================
    SCROLL-BASED ROTATION
