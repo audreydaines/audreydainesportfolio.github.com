@@ -265,6 +265,11 @@ function prepareModel(object) {
 
     modelPivot.add(object);
 
+    console.log(
+     "Model added to scene:",
+     modelPivot.children.length
+);
+
 
     // Position the camera according to model size.
 
