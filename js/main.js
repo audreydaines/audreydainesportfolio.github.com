@@ -22,11 +22,11 @@ import { OrbitControls } from
 // Change this path to your own model.
 //
 // Supported formats:
-// audreydaines.github.io/audreydainesportfolio.github.com/models/BiliSpectHat (1).glb
-// audreydaines.github.io/audreydainesportfolio.github.com/models/BiliSpectHat (1).gltf
-// audreydaines.github.io/audreydainesportfolio.github.com/models/BiliSpectHat (1).stl
+// audreydaines.github.io/audreydainesportfolio.github.com/models/BiliSpectHat%20(1).glb
+// audreydaines.github.io/audreydainesportfolio.github.com/models/BiliSpectHat%20(1).gltf
+// audreydaines.github.io/audreydainesportfolio.github.com/models/BiliSpectHat%20(1).stl
 
-const MODEL_PATH = 'audreydaines.github.io/audreydainesportfolio.github.com/models/BiliSpectHat (1).glb';
+const MODEL_PATH = 'audreydaines.github.io/audreydainesportfolio.github.com/models/BiliSpectHat%20(1).glb';
 
 // Total rotations across the page.
 // 1 = 360 degrees
