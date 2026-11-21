@@ -313,9 +313,12 @@ function prepareModel(object) {
    LOAD GLB / GLTF MODEL
 ========================================= */
 
+
 function loadGLTF() {
 
     const loader = new GLTFLoader();
+
+    console.log('Attempting to load:', MODEL_PATH);
 
     loader.load(
 
@@ -324,6 +327,8 @@ function loadGLTF() {
         function (gltf) {
 
             try {
+
+                console.log('GLB successfully downloaded and parsed.');
 
                 const object = gltf.scene;
 
@@ -352,13 +357,20 @@ function loadGLTF() {
                 loaderElement.querySelector('span').textContent =
                     `Loading 3D model... ${percentage}%`;
 
+            } else {
+
+                loaderElement.querySelector('span').textContent =
+                    'Downloading 3D model...';
+
             }
 
         },
 
         function (error) {
 
-            showError(error);
+            showError(
+                new Error('Could not load the GLB file. Check the model URL and browser Network tab.')
+            );
 
             console.error('GLTF loading error:', error);
 
@@ -367,6 +379,7 @@ function loadGLTF() {
     );
 
 }
+
 
 
 /* =========================================
