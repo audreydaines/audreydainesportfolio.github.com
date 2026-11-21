@@ -218,6 +218,10 @@ function prepareModel(object) {
 
     boundingBox.getSize(size);
 
+    console.log("Model center:", center);
+    console.log("Model size:", size);
+    console.log("Model object:", object);
+
 
     // Center model around the origin.
 
