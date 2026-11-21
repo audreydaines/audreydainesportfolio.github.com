@@ -22,11 +22,11 @@ import { OrbitControls } from
 // Change this path to your own model.
 //
 // Supported formats:
-// models/portfolio-model.glb
-// models/portfolio-model.gltf
-// models/portfolio-model.stl
+// models/BiliSpectHat (1).glb
+// models/BiliSpectHat (1).gltf
+// models/BiliSpectHat (1).stl
 
-const MODEL_PATH = 'models/portfolio-model.glb';
+const MODEL_PATH = 'models/BiliSpectHat (1).glb';
 
 // Total rotations across the page.
 // 1 = 360 degrees
